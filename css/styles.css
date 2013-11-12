@@ -1,9 +1,12 @@
 @import url(css/bootstrap.min.css);
 
 body {
-  background:url("http://www.google.com/url?sa=i&source=images&cd=&cad=rja&docid=Y89CcP_YmHBHFM&tbnid=PbjGgw1-amOdJM:&ved=0CAgQjRwwADjIAQ&url=http%3A%2F%2Fbarnsdalltimes.com%2F%3Fp%3D825&ei=MHuBUt6dL6rh2wXRioH4BA&psig=AFQjCNG_fm44dZRagZXu0Db5Psj6l_ee8A&ust=1384303792855786") no-repeat center center fixed;
+  background: url("http://barnsdalltimes.com/wp-content/uploads/2011/09/Palace_Grocery_091911_0027_WEB.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: over;
+  -o-background-size: cover;
+ background-size: cover;
 }
-background-size:cover;
 
 .bought-true
 {
