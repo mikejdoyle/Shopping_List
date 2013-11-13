@@ -9,28 +9,29 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <script src="./lib/angular.min.js" language="JavaScript" type="text/javascript"></script>
+    <script src="./lib/jquery-2.0.3.min.js" language="JavaScript" type="text/javascript"></script>
     <script src="./js/List.js" type="text/javascript"></script>
 
 </head>
 <body>
     <div class="jumbotron" ng-app>
          <div class="title">
-             <p>This Little Piggy Went to Market</p>
+             <p>This Little Piggy Went to Market...</p>
          </div>
-        <div>
-             <img  class="piggy" src="http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/37/4b/piggy1.jpg?itok=VbWs-GZ8" alt="food img">
+        <div class="boxtop">
+            <img  class="piggy" src="img/pig.png" alt="food img">
              <p class="title">And This is What he Bought!</p>
          </div>
 
-        <div  ng-controller="slctrl">
+        <div class= "form" ng-controller="slctrl">
             <form ng-submit = "additem()">
-              <input type="text" placeholder= "Grocery Item" ng-model = "itemtext">
+              <input type="text" placeholder= "Market Item" ng-model = "itemtext">
               <input type ="submit" class="btn-primary">
-              <input ng-click= "clear()" type ="button"  value= "Clean Up" class="btn-primary">
+              <input ng-click= "clear()" type ="button"  value= "Clean Up" class="btn-primary clean" >
             </form>
             <ul class="list-group">
                 <li class="list-group-item" ng-repeat="item in itemlist">
-                    <span ng-click="strike (item)"  class="bought-{{item.bought}}">{{item.text}} </span></li>
+                    <span ng-click="strike (item)" class="bought-{{item.bought}} inner">{{item.text}}</span></li>
             </ul>
         </div>
     </div>
